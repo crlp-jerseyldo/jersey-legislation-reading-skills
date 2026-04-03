@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.bak
+~$*
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node artifacts
+node_modules/
+dist/
+coverage/
