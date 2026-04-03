@@ -2,7 +2,9 @@
 
 ## What This Repository Is
 
-This repository is a reusable set of Markdown-first skills for reading Jersey legislation carefully, especially on JLIB (`jerseylaw.je`). It is designed for:
+This repository is a reusable set of Markdown-first skills for reading Jersey legislation carefully, especially on JLIB (`jerseylaw.je`). This is not an official JLIB or LDO item and is still work in progress & open to consultation.
+
+It is designed for:
 
 - careful human readers
 - LLM workflows
