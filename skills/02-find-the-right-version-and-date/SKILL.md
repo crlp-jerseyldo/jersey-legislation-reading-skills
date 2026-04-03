@@ -1,7 +1,7 @@
 ---
 name: find-the-right-version-and-date
-summary: Anchor the reading task to the correct version and date before drawing conclusions.
-version: 0.1
+summary: Match the question to the correct Jersey source state and date before drawing conclusions.
+version: 0.2
 depends_on:
   - orient-the-text-on-jlib
 enables:
@@ -12,53 +12,61 @@ enables:
 
 # Purpose
 
-Determine which version of the legislative text is relevant and what date the reading exercise is anchored to.
+Determine which source state and date the reading task actually requires.
 
 # Use When
 
 - the question is about the law now
-- the question is about the law at an earlier date
-- the material may be pending, historical, or as-enacted
-- a consolidated view may differ from the original enacted text
+- the question is about the law at a past date
+- the question is about the original enacted text
+- the material may be `Pending`, `Archive`, or otherwise not fit for the task
+- the user is asking about a future or proposed change
 
 # Do Not Use For
 
-- deciding substantive meaning without first fixing the version issue
-- tracing every amendment in detail
-- replacing a full commencement or amendment analysis where one is needed
+- detailed amendment tracing
+- commencement analysis beyond the immediate source-state problem
+- substantive interpretation before the source and date are fixed
 
 # Inputs
 
-- oriented JLIB text
-- the user’s target question
-- any date mentioned by the user
-- any visible version, status, or historical indicators
+- orientation output from skill 01
+- the user's question
+- any date stated by the user
+- any version or date range shown on the source page
 
 # Method
 
-1. Extract the legal question being asked: now, then, pending change, or original text.
-2. Identify the target date, or state that it is missing.
-3. Match the task to the likely version type: current consolidated, non-current, pending, or as-enacted.
-4. State whether the available text appears to fit that target.
-5. If the date or version remains uncertain, stop and say what is missing.
-6. Only then move to substantive reading.
+1. State the question type: present law, past law, original text, or future/proposed change.
+2. State the target date if given. If no date is given and the question could be historical, say that the target date is missing.
+3. Match the question to the source state:
+   - present law -> `Current`
+   - past law from `1 January 2019` onward -> `Current point-in-time`
+   - original text -> `Enacted`
+   - older or non-official historical work -> `Archive`, with limitation stated
+   - future or proposed change -> `Pending` or a States Assembly draft proposition
+4. Check whether the available source matches the needed source state.
+5. If the available source does not match, stop and state the mismatch plainly.
+6. Record the safe next step before any substantive reading.
 
 # Output Format
 
 - Question type:
 - Target date:
-- Needed version type:
-- Available text appears to be:
+- Needed source state:
+- Available source state:
 - Fit for task:
-- Next action:
+- Version / date caution:
+- Safe next step:
 
 # Common Traps
 
-- answering a historical question from a current text
-- treating pending material as current law
-- assuming consolidated text answers an as-enacted question
-- failing to surface that no target date was provided
+- answering a present-law question from `Enacted`, `Archive`, or `Repealed` material
+- treating `Pending` text as current law
+- forgetting that `Enacted` text is original text, not updated law
+- forgetting that `Current point-in-time` versions are available only from `1 January 2019`
+- confusing a States Assembly proposition with legislation already on JLIB
 
 # Dependency Notes
 
-This skill depends on basic orientation first. It often feeds directly into citation and substantive reading.
+This skill depends on correct orientation first. After the source state and date are fixed, move to `03-cite-and-link-jersey-legislation-properly`.

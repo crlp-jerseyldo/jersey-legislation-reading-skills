@@ -1,7 +1,7 @@
 ---
 name: read-a-provision-as-logic
-summary: Convert legislative prose into structured conditions, consequences, exceptions, and dependencies.
-version: 0.1
+summary: Turn Jersey legislative prose into a structured reading of rules, limbs, exceptions, and dependencies.
+version: 0.2
 depends_on:
   - orient-the-text-on-jlib
   - find-the-right-version-and-date
@@ -13,52 +13,58 @@ enables:
 
 # Purpose
 
-Turn a provision into a clear logical structure without pretending that simplification removes legal nuance.
+Restate a provision as structured logic without pretending that the structure itself resolves every interpretive issue.
 
 # Use When
 
-- a reader needs to unpack a dense article or paragraph
-- the provision contains conditions, alternatives, exceptions, or consequences
-- a human or AI system needs a structured reading aid
+- a provision is dense or nested
+- the text contains multiple limbs, alternatives, or exceptions
+- a human or LLM needs a more operational reading aid
 
 # Do Not Use For
 
 - replacing the original text
-- skipping definitions or cross-references
-- claiming that a logic map settles every interpretive question
+- skipping definitions, cross-references, or source-state cautions
+- turning a reading aid into a final legal conclusion
 
 # Inputs
 
 - provision text
 - provision-level citation
-- version and status context
+- source or collection
+- date range or target date
 
 # Method
 
-1. Identify the main operative verb or legal effect.
-2. Break the text into conditions, decision points, consequences, and exceptions.
-3. Separate mandatory elements from optional or alternative limbs.
-4. Note any terms that need definition lookup.
-5. Note any cross-references that may alter the logic.
-6. Restate the structure in plain English while preserving uncertainty where needed.
+1. Read the whole provision before breaking it apart.
+2. Identify the main operative rule or consequence.
+3. Separate conditions, alternatives, exceptions, and consequences.
+4. Track list connectors and nesting, especially where `and` and `or` operate at different levels.
+5. Note whether a term is being used in ordinary language, by `means`, by `includes`, or by cross-reference.
+6. Apply singular/plural and "always speaking" ideas cautiously as reading aids, not as automatic answers.
+7. Record unresolved defined terms, cross-references, or source-state cautions for later skills.
 
 # Output Format
 
-- Provision:
+- Source / collection:
+- Officiality:
+- Date range or target date:
+- Provision reference:
 - Main rule:
-- Conditions:
-- Alternatives:
+- Conditions and limbs:
 - Exceptions or carve-outs:
-- Terms needing definition:
+- Definition cues:
 - Cross-references to check:
+- Special caution:
 
 # Common Traps
 
-- flattening several limbs into one rule
-- ignoring a proviso, exception, or schedule interaction
-- treating undefined terms as self-explanatory
-- converting ambiguity into false certainty
+- flattening several nested limbs into one rule
+- losing the force of `and` or `or`
+- ignoring a proviso, schedule interaction, or parenthetical definition cue
+- treating `includes` as if it always meant `means`
+- using singular or present-tense drafting to imply a narrower result than the drafting method supports
 
 # Dependency Notes
 
-This skill should usually be followed by `05-apply-definitions-and-cross-references`. If interpretation remains uncertain after that, hand off to `07-boundary-check-legislation-alone-or-not`.
+This skill should usually hand off to `05-apply-definitions-and-cross-references` before any confident summary is given.

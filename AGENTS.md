@@ -2,67 +2,80 @@
 
 ## Repo Purpose
 
-This repository exists to store reusable skills, examples, tests, and source notes for reading Jersey legislation properly. It is meant to support careful human readers and AI systems that need a disciplined reading framework.
+This repository stores reusable skills, examples, tests, and source notes for reading Jersey legislation properly. It is for disciplined source-reading, not for free-form legal answering.
 
 ## Non-Goals
 
 Do not treat this repository as:
 
 - legal advice
-- a substitute for official legal sources
-- a free-form legal chatbot
-- a place for broad legal essays detached from practical reading tasks
+- a substitute for JLIB or other official sources
+- a complete statement of Jersey law
+- a case-law database
+- a chatbot persona layer
 
-## Core Operating Rules
+## Core Reading Rules
 
-- Always distinguish, where relevant, between official, non-official, current, non-current, pending, as-enacted, and consolidated material.
-- Always anchor reading to the relevant date when version questions matter.
-- Always prefer provision-level citation over vague page or document references.
+- Always identify the JLIB source state before substantive reading.
+- Always track `collection`, `officiality`, and `date range or target date`.
+- Always distinguish between `Current`, `Current point-in-time`, `Enacted`, `Pending`, `Archive`, `Repealed`, `Translated`, and `Annotated` where relevant.
+- Always distinguish Jersey legislation from UK-extended material.
+- Always prefer provision-level citation over page references.
 - Always signal uncertainty honestly.
-- Always say when legislation alone may be insufficient.
-- Keep skills narrow, composable, and reusable.
+- Always say when legislation alone is not enough.
+
+## Jersey-Specific Defaults
+
+- `Current` and `Current point-in-time` material in the current collection is official if the page states that it is official under the `Legislation (Jersey) Law 2021`.
+- JLIB's current-laws guidance says current laws and current-collection point-in-time versions are authorised for use in court, except extended UK legislation.
+- `Current point-in-time` versions are available back to `1 January 2019`.
+- `Enacted` material is official as originally made, but is not up to date.
+- `Pending` laws are not yet enacted or current and cannot have effect until the required later steps are completed.
+- `Translated` laws are unofficial reading aids and the English translations are not admissible in court; the original French law must be used where authority matters.
+- `Annotated` laws are not current-law substitutes and are not kept in step with every amendment.
+- `UK-extended` material in the current collection is static and must be read with care.
 
 ## Writing Standards
 
 - Use calm, plain English.
-- Prefer short operational sections over long theory.
-- Do not overstate authority.
-- Do not fabricate legal detail, quotations, or precise propositions.
-- Avoid unexplained jargon.
-- Write so both humans and AI systems can execute the guidance.
+- Prefer short operational sections over essays.
+- Do not overstate legal authority.
+- Do not fabricate quotations, rules, or examples.
+- Do not hide limits behind vague wording.
+- Write so a careful human or LLM can execute the method.
 
 ## File Conventions
 
-- Keep primary content in Markdown unless there is a strong reason otherwise.
-- Give each skill its own directory containing `SKILL.md`, `examples.md`, and `tests.md`.
-- Use stable, ordered, slug-style skill directory names such as `01-name-of-skill`.
-- Use concise headings with predictable section names.
-- When adding metadata, prefer lightweight front matter that can later be extended.
+- Keep repo content in Markdown unless there is a strong reason otherwise.
+- Each skill directory contains `SKILL.md`, `examples.md`, and `tests.md`.
+- Preserve the ordered skill naming pattern `NN-skill-name`.
+- Preserve the YAML front matter keys: `name`, `summary`, `version`, `depends_on`, `enables`.
+- Keep output formats stable and field-based where possible.
 
 ## Skill Design Rules
 
-- A skill should solve one reading problem well.
-- A skill should declare what it depends on and what it enables.
-- A skill should be executable as a checklist or method, not a long essay.
-- A skill should separate method from examples and tests.
-- If content grows large, split rather than overloading an existing skill.
+- One skill should solve one reading problem.
+- A skill should state when to use it and when not to use it.
+- A skill should expose the source and date facts needed for safe reading.
+- A skill should be executable without turning into a legal treatise.
+- If content grows beyond one reading task, split the skill rather than expanding it indefinitely.
 
 ## Maintenance Rules
 
-- Preserve modularity when adding new material.
-- Avoid hard-coding assumptions that block future jurisdictions or adapters.
-- Update internal references when renaming files or skills.
-- Keep examples schematic unless a source-backed worked example is intentionally added.
-- Keep source notes clearly separate from normative instructions.
+- Keep the Jersey/JLIB taxonomy consistent across docs, skills, examples, and tests.
+- If official JLIB categories or warnings change, update repo-wide guidance first, then skills.
+- Keep source notes upstream and clearly distinct from operative skill guidance.
+- Keep examples schematic unless backed by a checked source.
+- Do not blur descriptive reading into applied legal advice.
 
 ## Extension Rules
 
 When extending the repo:
 
-- add new skills as sibling modules, not as large appendices to existing ones
-- add new jurisdictions or overlays in their own future top-level area
-- keep repo-level guidance in `docs/`
-- keep cross-skill dependencies explicit but light
-- preserve backward-readable naming where possible
+- add new skills as sibling modules
+- keep jurisdiction-specific additions isolated and explicit
+- do not bury important rules in examples only
+- prefer stable terminology that can survive later renaming
+- preserve a future path for `jurisdictions/` and `adapters/`
 
-If a change would blur the boundary between reading guidance and legal conclusion, revise it before merging.
+If an edit would make the repo sound more certain than the sources justify, revise it before merging.

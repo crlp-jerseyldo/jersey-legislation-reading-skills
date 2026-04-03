@@ -1,19 +1,25 @@
 # Examples
 
-## Example 1
+## Example 1: Local Then General Definitions
 
-Input: A provision uses the term "relevant person" and that term is defined elsewhere in the instrument.
+Input: A current provision defines a term for `this Article` and the instrument also has a general interpretation article.
 
-Use: Pull the definition into the reading before summarising the provision's effect.
+Use: Check the local scoped definition first, not the general one.
 
-## Example 2
+## Example 2: Parent Enactment
 
-Input: An article says "subject to Article 12".
+Input: A Regulation uses a term that is not defined in the Regulation itself.
 
-Use: Check Article 12 before stating the rule in Article 8 as if it were complete on its own.
+Use: Check the enabling Law before settling the meaning, because Article 10 of the `Interpretation (Jersey) Law 1954` may matter.
 
-## Example 3
+## Example 3: External Enactment
 
-Input: A provision refers to another enactment.
+Input: A provision says a term has the same meaning as in another enactment.
 
-Use: Flag that the meaning may depend on an external text and date alignment, not just the local provision.
+Use: Check the external enactment at the same target date rather than assuming today's meaning always governs.
+
+## Example 4: Article 9 Reference
+
+Input: A provision refers simply to another enactment without spelling out version detail.
+
+Use: Consider Article 9 of the `Interpretation (Jersey) Law 1954` and record that the reference may be ambulatory unless context points the other way.

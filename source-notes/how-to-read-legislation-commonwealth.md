@@ -2,19 +2,26 @@
 
 ## Status
 
-Starter distilled note.
+Starter distilled note based on the user-supplied Commonwealth reading document.
 
-## Scope
+## Main Points Carried Into The Repo
 
-This note captures a general background idea: many practical methods for reading legislation across Commonwealth jurisdictions share common themes, even where local doctrine differs.
+- Reading legislation is not the same as resolving every statutory interpretation dispute.
+- First identify the legal system, legislature, and source type before reading detail.
+- Distinguish enacted text, consolidated text, official status, and point-in-time status.
+- Read the whole provision and its place in the instrument before fixing meaning.
+- Definitions are important, but they are not magic. Ordinary meaning in context still matters.
+- `Means` and `includes` do different work and should not be flattened together.
+- List connectors and levels matter; nested `and` / `or` structures must be preserved.
+- Singular and plural drafting, and "always speaking" ideas, often explain the drafting method.
+- Parent legislation and general interpretation legislation may affect subordinate legislation even without express repetition.
 
-## Key Points
+## Repo Impact
 
-- Careful legislation reading usually starts with text identification, structure, version, and date.
-- Definitions, cross-references, and schedules often control meaning more than first impressions suggest.
-- General interpretive context matters, but it should be introduced carefully and not used to mask uncertainty.
-- A reading framework should distinguish text description from applied legal conclusion.
+This note mainly supports:
 
-## Use In This Repo
+- the logic-reading skill
+- the definitions and cross-reference skill
+- the Jersey-defaults skill
 
-This note supports the general method design of the skills, while the repository itself remains Jersey-specific in focus and terminology.
+It also explains why the repo keeps structure, source state, and reading order explicit rather than jumping straight to interpretation.

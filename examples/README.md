@@ -1,11 +1,12 @@
 # Worked Examples
 
-This folder contains short walkthroughs that show how several skills can be used in sequence on a reading task.
+This folder contains short walkthroughs showing how the skills compose in realistic Jersey/JLIB reading tasks.
 
-The examples are intentionally schematic. They are meant to demonstrate method, handoff points, and safe stopping behaviour rather than provide authoritative legal conclusions.
+The examples are intentionally operational:
 
-Use this folder to:
+- identify the source state first
+- fix date and version before interpretation
+- keep citations provision-level
+- show where the workflow should stop
 
-- see how modular skills combine in practice
-- compare narrow skill outputs with a fuller workflow
-- test whether a human or AI system preserves caution across multiple steps
+These walkthroughs are not legal conclusions. They are demonstrations of safe method.

@@ -1,7 +1,7 @@
 ---
 name: boundary-check-legislation-alone-or-not
-summary: Decide whether legislation alone is enough or whether further authority or context is needed.
-version: 0.1
+summary: Decide whether Jersey legislation alone supports the answer or whether further authority or factual context is required.
+version: 0.2
 depends_on:
   - read-a-provision-as-logic
   - apply-definitions-and-cross-references
@@ -11,49 +11,55 @@ enables: []
 
 # Purpose
 
-Prevent false certainty by checking whether the reading task can responsibly be answered from legislation alone.
+Prevent false certainty by separating what the legislative text itself supports from what would require more than legislation.
 
 # Use When
 
-- the user wants a legal conclusion, not just a reading summary
-- interpretation turns on ambiguity, scope, or disputed application
-- case law, court interpretation, facts, guidance, or procedural context may matter
+- the user wants more than a descriptive reading
+- the answer may depend on case law, court interpretation, facts, remedies, or broader legal context
+- the source is `Pending`, `Translated`, `Annotated`, `Archive`, `Repealed`, or UK-extended material
 
 # Do Not Use For
 
-- pretending legislation alone always answers the question
-- refusing simple descriptive tasks that the text clearly supports
+- refusing a straightforward descriptive reading that the text clearly supports
 - giving final legal advice
+- hiding the difference between text summary and applied legal outcome
 
 # Inputs
 
-- reading output from earlier skills
-- unresolved ambiguities
-- the user’s actual question
+- outputs from earlier skills
+- the user's actual question
+- the source state and date posture
 
 # Method
 
-1. Separate descriptive reading from applied legal conclusion.
-2. Ask whether the text is clear enough for the exact question.
-3. Identify missing elements such as case law, factual context, court practice, official guidance, or commencement detail.
-4. State whether legislation alone is enough, probably enough, or not enough.
-5. If not enough, stop and explain the boundary plainly.
+1. State what the text itself supports descriptively.
+2. State which source category the answer depends on.
+3. Check for stop rules:
+   - customary law or common law not listed on Jerseylaw.je
+   - court interpretation or case law
+   - draft legislation on the States Assembly site
+   - public-law consequences or remedies
+   - fact-sensitive application to a person's situation
+4. State what further authority, evidence, or context would be needed.
+5. Give the safe answer posture: descriptive only, cautious partial answer, or stop.
 
 # Output Format
 
 - Question asked:
-- What legislation alone can support:
-- What remains uncertain:
-- Extra material likely needed:
+- What the text itself supports:
+- Source category relied on:
+- What legislation alone does not settle:
+- Further authority or context needed:
 - Safe answer posture:
 
 # Common Traps
 
-- turning text reading into legal advice
-- hiding that interpretation may depend on case law or facts
-- assuming the absence of explicit ambiguity means no uncertainty exists
-- refusing everything instead of distinguishing low-risk descriptive answers from high-risk conclusions
+- turning a reading result into a court-outcome prediction
+- ignoring that Jersey law includes customary law and common law outside Jerseylaw.je
+- treating `Pending`, `Translated`, or `Annotated` material as if it settled the answer by itself
+- assuming ambiguity disappears because the text has been paraphrased cleanly
 
 # Dependency Notes
 
-This is usually the final checking skill in a workflow. It should compress the limits identified by earlier skills into a clear answer posture.
+This is the final checking skill. It compresses the limits discovered by earlier skills into an honest answer posture.

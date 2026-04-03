@@ -2,10 +2,10 @@
 
 ## Prompt Set
 
-1. A user asks what the law is now, but the only text provided is labelled non-current. What should happen?
-2. A user asks for the law as enacted. The text available is a consolidated current version. What mismatch should be identified?
-3. A user asks whether a pending amendment already applies. What version-and-date warning is required?
-4. No target date is given, but the question could be historical. How should the output handle this?
-5. A user provides a date and a current-looking extract. What should be checked before proceeding?
-6. A present-law question is paired with translated material only. What should be said about fitness for task?
-7. A historical question is asked about UK-extended material. What extra caution should be flagged?
+1. A user asks what the law is now, but the only source supplied is `Enacted`. What mismatch should be recorded?
+2. A user asks what the law said in 2020. What source state should normally be used first?
+3. A user asks what the original text was. Why is `Current` not enough on its own?
+4. A user asks whether a `Pending` law already has effect. What must the skill say?
+5. A user asks about a draft proposition on the States Assembly website. How should the source be classified?
+6. A user asks about a 2015 position and only supplies a current point-in-time page. What limitation should be stated?
+7. A user asks a historical question but gives no date. How should the output handle the missing date anchor?

@@ -2,9 +2,9 @@
 
 ## Prompt Set
 
-1. A provision seems incomplete without a general commencement assumption. How should that be framed?
-2. A reader asks whether a general interpretive rule changes the meaning conclusively. What restraint is required?
-3. There is no concrete trigger for a background rule. Should one still be introduced?
-4. A procedural power is granted in general terms. What sort of background-rule caution may be appropriate?
-5. The issue would materially affect the answer. What should the output recommend?
-6. A user wants certainty from a highly schematic extract. How should the skill resist overclaiming?
+1. A general duty is drafted in the singular. Which Jersey-wide default may matter?
+2. An offence provision refers to `a person`. Which maintained default should be checked?
+3. A Regulation uses a term carried over from the parent Law. Which maintained default should be checked?
+4. A provision refers to another enactment and the timing matters. Which maintained default is relevant?
+5. A reader wants you to invoke broad interpretive principles not on the maintained shortlist. What should the skill do?
+6. An offence question raises age of criminal responsibility. How should that be framed without turning it into a universal background rule?

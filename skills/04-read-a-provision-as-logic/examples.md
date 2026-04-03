@@ -1,19 +1,25 @@
 # Examples
 
-## Example 1
+## Example 1: Connector Structure
 
-Input: A provision stating that a person must do X if conditions A and B are met, unless paragraph (3) applies.
+Input: A current provision with several lettered limbs and `or` before the last sub-paragraph.
 
-Use: Separate the main rule, the joint conditions, and the exception in paragraph (3).
+Use: Separate the limbs by level and preserve where the alternatives sit, instead of collapsing them into one blended condition.
 
-## Example 2
+## Example 2: Definition Cue
 
-Input: A provision with several lettered subparagraphs.
+Input: An enacted provision using a term followed by `means`.
 
-Use: Treat each limb as a separate branch rather than one blended rule.
+Use: Mark that the provision contains an exhaustive definition cue and carry that into the logic map.
 
-## Example 3
+## Example 3: Inclusive Definition
 
-Input: A provision using an apparently ordinary term that is actually defined elsewhere.
+Input: A current point-in-time provision using `includes`.
 
-Use: Mark the term as unresolved and pass it to the definitions skill before drawing conclusions.
+Use: Treat the list as non-exhaustive unless the surrounding context clearly points otherwise, and flag that the term may cover more than the listed items.
+
+## Example 4: Present-Tense Duty
+
+Input: A provision imposing a duty in the present tense.
+
+Use: Treat the drafting as a rule to be assessed at the relevant time, not as a one-off snapshot that exhausts the obligation forever.

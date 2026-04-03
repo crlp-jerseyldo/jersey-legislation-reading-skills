@@ -1,19 +1,25 @@
 # Examples
 
-## Example 1
+## Example 1: Singular And Plural
 
-Input: A provision grants a power but says little about how it is exercised.
+Input: A current provision uses singular nouns in a general duty.
 
-Use: Flag that general interpretive or procedural background rules may matter before treating the text as self-contained.
+Use: Check Article `2` of the `Interpretation (Jersey) Law 1954` before reading the duty too narrowly.
 
-## Example 2
+## Example 2: Penal Enactment
 
-Input: A rule appears to refer to future changes or commencement events not set out in the extracted passage.
+Input: An offence provision uses the term `person`.
 
-Use: Note that background commencement context may be relevant and that the extract alone may be incomplete.
+Use: Check whether Article `3` matters before assuming the offence applies only to natural persons.
 
-## Example 3
+## Example 3: Subordinate Legislation
 
-Input: A provision seems ambiguous if read only literally.
+Input: An Order uses a term that appears in the enabling Law.
 
-Use: Mention that broader interpretive principles may matter, but avoid pretending they settle the issue without further authority.
+Use: Check Article `10` and record whether the parent's meaning carries down.
+
+## Example 4: Offence Analysis Overlay
+
+Input: A criminal offence provision appears to apply to `a person` without age qualification.
+
+Use: Keep the main default analysis separate from the additional check that the `Criminal Justice (Young Offenders) (Jersey) Law 2014` may affect offence analysis.

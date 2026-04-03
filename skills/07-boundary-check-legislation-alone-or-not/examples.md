@@ -1,19 +1,25 @@
 # Examples
 
-## Example 1
+## Example 1: Descriptive Current-Law Reading
 
-Input: A user asks what a provision literally says.
+Input: A user asks what a current official provision says.
 
-Use: Legislation alone may support a cautious descriptive summary.
+Use: Give a descriptive provision-level reading if earlier skills are complete, while still separating text summary from application to facts.
 
-## Example 2
+## Example 2: Court Outcome Question
 
-Input: A user asks whether a person would definitely succeed in court under a provision.
+Input: A user asks whether they would definitely win or lose in court under a provision.
 
-Use: Flag that legislation alone is not enough and that factual and interpretive context would matter.
+Use: State that legislation alone does not settle the answer and that case law, facts, and court interpretation may be needed.
 
-## Example 3
+## Example 3: Draft Proposition
 
-Input: The provision is clear on one narrow point but ambiguous on another.
+Input: A user asks whether a States Assembly draft proposition has changed the law already.
 
-Use: Separate what can be said directly from the text from what requires further authority.
+Use: Stop and explain that draft material is not current legislation.
+
+## Example 4: Annotated Or Translated Material
+
+Input: A user wants a definitive answer based only on an annotated page or an unofficial translation.
+
+Use: Explain what those materials can help with and what they cannot settle by themselves.

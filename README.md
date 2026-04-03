@@ -2,17 +2,14 @@
 
 ## What This Repository Is
 
-This repository is a modular set of reusable skills for reading Jersey legislation carefully and consistently. It is designed for human readers, LLM workflows, and agent systems that need a practical framework for:
+This repository is a reusable set of Markdown-first skills for reading Jersey legislation carefully, especially on JLIB (`jerseylaw.je`). It is designed for:
 
-- orienting a text on JLIB before reading it
-- identifying the right version and date
-- citing Jersey legislation precisely
-- reading provisions as structured logic
-- applying definitions and cross-references
-- spotting background rules that may affect reading
-- deciding when legislation alone is not enough
+- careful human readers
+- LLM workflows
+- agent systems
+- testing and evaluation work
 
-The repository is Markdown-first, deliberately plain, and structured so parts can be reused, renamed, split, or replaced later.
+The focus is operational. Each skill is meant to help a reader identify the source, control for date and version, cite properly, read a provision as structured logic, apply definitions and cross-references, use Jersey-wide reading defaults cautiously, and stop where legislation alone is not enough.
 
 ## What This Repository Is Not
 
@@ -20,60 +17,77 @@ This repository is not:
 
 - legal advice
 - a chatbot product
-- a definitive textbook on Jersey law
-- a substitute for official sources, legal research, or professional judgment
+- a substitute for JLIB or other official sources
+- a complete account of Jersey law
+- a substitute for case law, court practice, or professional judgment
 
-It is a framework for disciplined reading.
+It is a framework for disciplined reading of legislation.
+
+## Jersey And JLIB Focus
+
+The repository is built around the source states and cautions that matter on JLIB:
+
+- `Current`: laws in force today
+- `Current point-in-time`: earlier official versions in the current collection, available back to `1 January 2019`
+- `Enacted`: legislation in the form originally made, not updated
+- `Pending`: not yet enacted or current, and not yet in effect
+- `Archive (non-current)`: a mixed collection of versions that are not current or are not official
+- `Repealed`: legislation repealed, lapsed, expired, or otherwise ceased to be in force
+- `Translated`: unofficial English translations of some French laws
+- `Annotated`: article-level case-linked material from the superseded revised edition
+
+The repo also treats `UK-extended` material as a special case. JLIB places such Orders in Council in the current collection, but the official JLIB guidance says they are static and need to be interpreted with care.
 
 ## Skill Families
 
-The current skill set is organised around seven core reading tasks:
+The current skills cover seven linked tasks:
 
-1. JLIB orientation
-2. version and date control
-3. citation and linking
-4. provision-to-logic reading
-5. definitions and cross-references
-6. restrained background-rule checking
-7. boundary checking on whether legislation alone is enough
+1. orient the text on JLIB
+2. find the right version and date
+3. cite and link Jersey legislation properly
+4. read a provision as logic
+5. apply definitions and cross-references
+6. apply Jersey-wide reading defaults cautiously
+7. boundary-check whether legislation alone is enough
 
-Each skill is intentionally narrow and composable. Worked examples show how multiple skills can be used together, and tests provide concise prompts for checking whether the skills behave as intended.
+The skills are narrow on purpose. A reader or system should be able to compose them in sequence without treating any single file as a complete legal method.
 
-## How To Use This Repository
+## How To Use The Repository
 
-In practice, a careful reader or AI system would normally:
+In a normal workflow:
 
-1. identify what text is being looked at and in which JLIB collection it sits
-2. confirm whether the version and date are the right ones for the task
-3. cite the relevant provision precisely
-4. unpack the provision into operative logic
-5. resolve definitions and cross-references
-6. check whether background rules or external context may matter
-7. stop and signal limits where the legislation alone may not answer the question
+1. identify what source is being used and whether it is official
+2. fix the target date and the right version type
+3. cite the exact provision
+4. turn the provision into a structured reading
+5. pull in definitions and linked provisions
+6. apply Jersey-wide defaults only where they are genuinely relevant
+7. say plainly when legislation alone does not settle the question
 
-The repo can be used as:
+This can be used as:
 
-- a reading checklist for humans
-- a modular prompt source for LLM systems
-- a test corpus for agent behaviour
-- a starter framework for larger Jersey-focused legal reading tools
+- a reading checklist
+- a prompt library
+- a review standard for AI outputs
+- a test corpus for agents
+- a foundation for future Jersey-focused adapters
 
 ## Repository Layout
 
-- `docs/` contains repo-level guidance and system maps
+- `docs/` contains repo-wide guidance and Jersey/JLIB maps
 - `skills/` contains the reusable skill modules
-- `examples/` contains multi-skill walkthroughs
-- `tests/` contains repo-level scenario sets
-- `source-notes/` contains upstream reference notes that inform the skills
+- `examples/` contains worked multi-skill walkthroughs
+- `tests/` contains repo-level scenario lists
+- `source-notes/` contains distilled upstream notes that informed the skills
 
-## Future Extensibility
+## Extensibility
 
-The structure is designed so future additions can be made without reorganising the whole repository. Likely expansions include:
+The structure is intentionally stable and plain. It should be easy later to add:
 
-- additional Jersey skill modules
-- jurisdiction overlays or a future `jurisdictions/` folder
-- machine-readable metadata alongside Markdown
-- adapters for other AI systems in a future `adapters/` folder
-- deeper example sets and more formal test suites
+- new Jersey reading skills
+- domain-specific overlays
+- a future `jurisdictions/` layer
+- machine-readable metadata
+- a future `adapters/` layer for other AI systems
 
-The main design rule is to keep foundations stable while letting modules evolve independently.
+The guiding rule is to preserve a small number of strong foundations and let modules change independently.

@@ -1,18 +1,23 @@
 # Repo-Level Tests
 
-This folder contains scenario sets that test the behaviour of the repository as a whole.
+This folder contains scenario lists for testing the repository as a whole.
 
 ## Purpose
 
-Repo-level tests are meant to check:
+Repo-level tests check whether:
 
-- whether multiple skills compose properly
-- whether uncertainty is surfaced at the right time
-- whether JLIB navigation and version control are handled consistently
-- whether the framework refuses or narrows overreaching requests appropriately
+- the Jersey/JLIB taxonomy is applied consistently
+- the skills compose in the right order
+- source-state and officiality warnings appear when needed
+- the workflow stops where legislation alone is not enough
 
-## Skill-Level vs Repo-Level Tests
+## Skill-Level And Repo-Level Tests
 
-Skill-level tests live inside each skill directory and focus on one module at a time.
+Skill-level tests inside each skill directory probe one module at a time.
 
-Repo-level tests in this folder are broader. They test sequencing, boundaries, and failure modes across several skills together.
+Repo-level tests in this folder probe combined behaviour across several skills, especially:
+
+- source triage
+- date and version control
+- citation posture
+- stop rules and refusals

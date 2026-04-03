@@ -1,7 +1,7 @@
 ---
 name: orient-the-text-on-jlib
-summary: Identify what kind of JLIB text is being viewed before doing substantive reading.
-version: 0.1
+summary: Identify the exact JLIB source state, officiality, date range, and caution before reading substance.
+version: 0.2
 depends_on: []
 enables:
   - find-the-right-version-and-date
@@ -11,52 +11,60 @@ enables:
 
 # Purpose
 
-Work out what the reader is actually looking at on JLIB before any substantive interpretation begins.
+Work out exactly what text the reader is looking at on JLIB before any substantive reading begins.
 
 # Use When
 
-- a JLIB page or extract has been provided
-- the reader is not yet sure what collection or status the text comes from
-- there is a risk of confusing current, pending, historical, translated, or annotated material
+- a JLIB page, link, screenshot, PDF, or extract is provided
+- the reader may be confusing `Current`, `Enacted`, `Pending`, `Archive`, `Repealed`, `Translated`, or `Annotated`
+- the text may involve UK-extended material
 
 # Do Not Use For
 
-- deciding the correct date-specific version on its own
-- interpreting the legal effect of the provision in detail
-- resolving disputes about meaning
+- choosing the final target version for the legal question
+- interpreting the provision in detail
+- deciding whether legislation alone answers the question
 
 # Inputs
 
-- JLIB page, extract, link, screenshot, or copied text
-- visible title, collection label, status indicators, and structural headings
+- JLIB page, link, PDF, screenshot, or copied extract
+- page title
+- collection label or breadcrumb
+- officiality statement if visible
+- date range shown on the page
+- provision heading or structural unit in view
 
 # Method
 
-1. Identify the instrument title and instrument family if visible.
-2. Identify the collection or status marker shown on JLIB.
-3. Note whether the text appears current, pending, non-current, translated, annotated, or otherwise special.
-4. Identify the structural unit being viewed: article, paragraph, schedule, note, or other.
-5. Record any immediate caution flags, such as historical status, translation, annotation, or UK-extended context.
-6. Stop with an orientation summary before substantive reading.
+1. Record the instrument title.
+2. Record the instrument type: Law, Regulations, Order, Act, Bye-law, Rule, or UK-extended Order in Council material.
+3. Record the source or collection: `Current`, `Current point-in-time`, `Enacted`, `Pending`, `Archive`, `Repealed`, `Translated`, or `Annotated`.
+4. Record whether the page presents an official version, an unofficial translation, or another non-official source state.
+5. Record the date range shown on the page, such as `Showing the law from 11 January 2024 to Current`.
+6. Record whether the material is Jersey legislation or UK-extended material.
+7. Record the provision reference or structural unit currently in view.
+8. State any immediate special caution before substantive reading starts.
 
 # Output Format
 
-Use a short orientation block:
-
 - Instrument:
-- Instrument family:
-- JLIB collection or status:
-- Structural unit in view:
+- Instrument type:
+- Source / collection:
+- Officiality:
+- Date range shown on page:
+- Jersey or UK-extended:
+- Provision reference in view:
 - Special caution:
 - Safe next step:
 
 # Common Traps
 
-- starting interpretation before identifying the collection
-- treating annotation or translation as if it were always the operative text
-- failing to notice that a page is historical or pending
-- citing the whole page when only one provision matters
+- treating every page in the current collection as the same kind of source
+- missing that a page is `Pending`, `Enacted`, `Repealed`, `Translated`, or `Annotated`
+- treating a translation as authoritative text
+- missing that UK-extended material in the current collection is a special case
+- starting interpretation before recording the page's own date range
 
 # Dependency Notes
 
-This skill should usually come before all other reading skills. If date or version matters, hand off next to `02-find-the-right-version-and-date`.
+This skill should normally come first. After orientation, hand off to `02-find-the-right-version-and-date`.

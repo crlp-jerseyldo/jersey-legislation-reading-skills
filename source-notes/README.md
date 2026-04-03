@@ -1,13 +1,11 @@
 # Source Notes
 
-This folder stores source materials or distilled notes that inform the skills in this repository.
+This folder stores concise upstream notes that informed the skills in this repository.
 
-These notes are upstream reference material, not the skills themselves. They may contain background observations, design rationale, or external-source summaries that later support revisions to the operational guidance.
+These notes are not the skills themselves. They record source-backed observations that shaped the repo's method, especially:
 
-Use this folder to:
+- the two user-supplied documents
+- public JLIB guidance
+- key Jersey legislative interpretation materials
 
-- capture concise research notes
-- preserve inputs that shaped a skill
-- keep supporting material separate from the reusable workflow documents
-
-Where a note is only a starter summary, mark it clearly as such.
+Use this folder to preserve short distilled notes without turning the repository into a commentary library.

@@ -1,7 +1,7 @@
 ---
 name: apply-definitions-and-cross-references
-summary: Resolve defined terms and follow cross-references that may change how a provision should be read.
-version: 0.1
+summary: Resolve Jersey definitions and cross-references in a fixed lookup order before settling meaning.
+version: 0.2
 depends_on:
   - read-a-provision-as-logic
 enables:
@@ -11,50 +11,59 @@ enables:
 
 # Purpose
 
-Check whether the meaning of a provision depends on definitions or cross-references that are not obvious from the text in isolation.
+Work out whether the provision's meaning changes once definitions and cross-references are properly applied.
 
 # Use When
 
-- the provision uses capitalised, technical, or apparently loaded terms
-- the provision explicitly cross-refers to another article, schedule, law, or external text
-- the logic map cannot be completed safely without more text
+- a provision uses defined or technical terms
+- the provision says `subject to`, `for the purposes of`, `under`, or otherwise points elsewhere
+- the reading cannot safely be completed from the isolated text
 
 # Do Not Use For
 
-- speculative expansion into every remote cross-reference
-- assuming a common-language meaning where a definition may govern
-- treating a cross-reference as irrelevant without checking it
+- speculative expansion into remote materials with no reading payoff
+- skipping straight to ordinary-language meaning when a defined meaning may govern
+- assuming cross-references can be ignored because the main rule looks clear at first sight
 
 # Inputs
 
-- logic map of the provision
-- list of unresolved terms
-- list of internal or external cross-references
+- logic map from skill 04
+- provision-level citation
+- source or collection
+- unresolved terms
+- explicit internal or external cross-references
 
 # Method
 
-1. List the terms that may be defined.
-2. Check for local definitions first, then general definitions in the same instrument.
-3. List explicit cross-references and classify them as internal or external.
-4. Check whether each definition or cross-reference changes scope, threshold, procedure, or exception structure.
-5. Update the reading summary to reflect those dependencies.
-6. If the chain becomes too long or uncertain, say so rather than guessing.
+Use this lookup order:
+
+1. Check for a local scoped definition in the same provision or part.
+2. Check the instrument-wide interpretation provision.
+3. Check same-instrument cross-references.
+4. If the text is subordinate legislation, check the parent enactment.
+5. Check defaults from the `Interpretation (Jersey) Law 1954`, especially Articles `1`, `2`, `4`, `9`, `10`, and `11`.
+6. Check external enactment cross-references against the same target date as the main question.
+7. Update the reading and note any unresolved dependencies that still remain.
 
 # Output Format
 
+- Source / collection:
+- Date range or target date:
+- Provision reference:
 - Defined terms checked:
-- Definitions affecting meaning:
 - Cross-references checked:
+- Interpretation (Jersey) Law 1954 defaults checked:
 - Reading impact:
 - Remaining unresolved dependencies:
 
 # Common Traps
 
-- ignoring an interpretation section
-- following only one cross-reference in a chain
-- assuming an external reference says the same thing now as at the target date
-- failing to mark unresolved dependencies
+- ignoring a local definition because a general interpretation article exists
+- missing that subordinate legislation may inherit meaning from the parent enactment
+- following an external enactment without aligning dates
+- missing Article 9's default treatment of references to enactments
+- stopping after one cross-reference in a longer chain
 
 # Dependency Notes
 
-This skill is usually applied after the initial logic map. If unresolved issues remain after this stage, boundary-checking is often the next step.
+This skill usually follows logic mapping. If important uncertainty remains after this stage, move to `06-apply-non-obvious-background-rules` or directly to `07-boundary-check-legislation-alone-or-not`.

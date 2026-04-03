@@ -2,56 +2,79 @@
 
 ## Purpose
 
-This repository is built as a framework for careful legislation reading, not as a monolithic guide. The aim is to make small, durable components that can be reused across human workflows, LLM prompts, and agent systems.
+This repository is a modular framework for reading Jersey legislation carefully. It is not a single narrative guide. Its job is to break legislation reading into stable, reusable operations that can be executed by humans, LLMs, and agents.
 
 ## Why The Skills Are Modular
 
-Legislation reading is not one task. A reader may need to:
+Reading legislation properly requires several distinct moves:
 
-- orient the text first
-- control for version and date
-- cite accurately
-- unpack logic
-- trace definitions
-- check background rules
-- decide whether to stop and escalate
+- identify the source and whether it is official
+- fix the relevant date and version
+- cite the provision precisely
+- read the provision as structure and logic
+- apply definitions and cross-references
+- apply limited Jersey-wide defaults where needed
+- stop where legislation alone does not answer the question
 
-Keeping these as separate skills makes it easier to combine them in different sequences, revise one part without disturbing others, and test failures more clearly.
+Keeping these separate helps in three ways:
+
+- each step can be tested and improved on its own
+- examples can show different sequences for different tasks
+- future expansion does not require rewriting the whole repo
 
 ## Relationship Between Skills, Examples, Tests, And Source Notes
 
-- `skills/` contains reusable operating instructions
-- `examples/` shows how several skills can be used together
-- `tests/` checks behaviour across broader repo-level scenarios
-- `source-notes/` stores upstream reference material and distilled notes that inform the framework
+- `skills/` contains the reusable methods
+- `examples/` shows how the methods compose in practice
+- `tests/` probes whether the methods behave safely across scenarios
+- `source-notes/` stores distilled upstream material that informed the methods
 
-The repository should treat these as different layers. Source notes inform skills, but they are not themselves the skill instructions. Examples demonstrate usage, but they are not the rule source. Tests probe behaviour, but they are not explanatory essays.
+The layers should remain distinct. Source notes are not instructions. Examples are not authority. Tests are not explanations. Skills are the operative layer.
 
-## Design Philosophy
+## Architectural Philosophy
 
-- keep the number of top-level concepts small
-- prefer stable names and predictable structure
-- make room for future metadata without forcing it now
-- keep content plain enough to port into other systems later
-- separate high-confidence guidance from areas where uncertainty must be flagged
+- prefer a small number of strong foundations
+- preserve a shared Jersey/JLIB taxonomy across the repo
+- track source status and date as first-class reading facts
+- use plain Markdown so content can move into other systems later
+- keep uncertain or limited points explicit instead of smoothing them away
+
+## Jersey-Specific Foundation
+
+This repository assumes that serious Jersey legislation reading usually starts on JLIB and therefore depends on recognising source states such as:
+
+- `Current`
+- `Current point-in-time`
+- `Enacted`
+- `Pending`
+- `Archive (non-current)`
+- `Repealed`
+- `Translated`
+- `Annotated`
+
+The architecture therefore treats source classification, officiality, and date control as foundational rather than optional.
 
 ## Adding New Skill Families
 
-New skill families should be added only when they solve a distinct reading problem. If a new topic can be expressed as a dependency note or a worked example, prefer that over creating a broad catch-all skill.
+Add a new skill only if it solves a distinct reading problem that cannot be handled well by:
 
-Possible future families might cover:
+- refining an existing skill
+- adding a dependency note
+- adding examples or tests
 
-- amendment-tracing
-- commencement analysis
-- subordinate legislation reading
-- comparative Jersey and UK extension issues
+Good future candidates might include:
+
+- commencement tracking
+- amendment tracing
+- subordinate-legislation chains
+- offence analysis overlays
 
 ## Adding Future Jurisdictions
 
-If the repository later expands beyond Jersey, do not dilute the Jersey-specific modules. Instead:
+If the repo later expands beyond Jersey:
 
-- preserve the current Jersey skill set as one stable layer
-- add jurisdiction-specific overlays in a dedicated top-level area
-- keep shared reading methods separate from local legal system notes
+- keep the current Jersey layer intact
+- add jurisdiction-specific overlays rather than diluting existing skills
+- keep shared methods separate from local source-state rules
 
-This allows common methods and local variations to coexist without confusion.
+That allows a future `jurisdictions/` area to sit alongside the current repo without breaking existing references or naming.

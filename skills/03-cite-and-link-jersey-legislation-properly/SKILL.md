@@ -1,7 +1,7 @@
 ---
 name: cite-and-link-jersey-legislation-properly
-summary: Cite Jersey legislation at provision level and link to the most relevant text without vague references.
-version: 0.1
+summary: Cite Jersey legislation at provision level with source-state and date information that matches the task.
+version: 0.2
 depends_on:
   - orient-the-text-on-jlib
   - find-the-right-version-and-date
@@ -12,49 +12,57 @@ enables:
 
 # Purpose
 
-Produce precise, provision-level citations and sensible linking habits for Jersey legislation reading work.
+Produce precise provision-level citations and links that preserve the source status and date context of the text being used.
 
 # Use When
 
-- referring to a specific article, paragraph, schedule, or similar unit
-- quoting or summarising legislation in notes, prompts, or outputs
-- linking readers back to the relevant legislative text
+- referring to a specific provision
+- quoting or summarising legislation
+- linking a reader back to JLIB
+- recording authority for a reading output
 
 # Do Not Use For
 
-- making up citation formats unsupported by the text in view
-- relying on page numbers where provision numbering exists
-- masking uncertainty about the source or version
+- vague whole-document citation where a provision can be identified
+- page-number citation as a first choice
+- hiding that the source is `Pending`, `Enacted`, `Archive`, `Translated`, `Annotated`, or `UK-extended`
 
 # Inputs
 
-- identified instrument title
-- provision number or structural unit
-- version or status context
-- stable JLIB link if available
+- instrument title
+- provision reference
+- source or collection
+- officiality status
+- date range or target date
+- direct JLIB link if available
 
 # Method
 
 1. Identify the smallest useful provision unit.
-2. Cite the instrument title and the provision unit together.
-3. Add status or date context if it matters to the task.
-4. Link to the most direct available source location, not just a generic collection page.
-5. If the precise provision cannot be identified, say so rather than citing vaguely.
+2. Cite the instrument title and provision reference together.
+3. Add the source status.
+4. Add the date range shown on the page, or the target date if the task is date-anchored.
+5. Add a direct JLIB link if available.
+6. If a precise provision cannot be identified, say so. Use a page-based reference only as a fallback.
 
 # Output Format
 
-- Citation:
-- Link:
-- Version or date note:
-- Citation confidence:
+- Instrument title:
+- Provision reference:
+- Source / collection:
+- Officiality:
+- Date range or target date:
+- Direct link:
+- Citation note:
 
 # Common Traps
 
-- citing a whole instrument when only one article matters
-- using page references instead of provision references
-- omitting that a citation is to pending or historical text
-- linking to a general search result rather than the relevant source page
+- citing only the instrument when one article or paragraph is doing the work
+- omitting that the source is not straightforward current official Jersey legislation
+- treating a PDF page number as the main citation
+- failing to distinguish `Current` from `Current point-in-time`
+- linking only to a search page when a direct page is available
 
 # Dependency Notes
 
-This skill works best after orientation and version control. It supports later logic reading and cross-reference work.
+This skill follows source and date control. It prepares a stable reference for logic reading and cross-reference work.

@@ -2,10 +2,10 @@
 
 ## Prompt Set
 
-1. A provision uses a term that looks ordinary but is defined in the interpretation article. What should be done?
-2. A provision is expressed to be subject to another article. How should the reading output change?
-3. The provision cross-refers to external legislation. What extra version caution is needed?
-4. A chain of cross-references becomes long and uncertain. Should the skill invent a final meaning?
-5. No explicit definition is found, but the term appears technical. How should uncertainty be expressed?
-6. A schedule modifies how a main article works. What must the skill avoid overlooking?
-7. A definition changes who falls inside the rule. Where should that impact be recorded?
+1. A term is defined locally for one Article and differently in the general interpretation Article. Which should be checked first?
+2. A Regulation uses an undefined term that appears in the parent Law. What lookup step is required?
+3. A provision cross-refers to another provision in the same instrument. What must the output record?
+4. A provision adopts a meaning from another enactment. Why must the target date stay aligned?
+5. A reference to another enactment appears without qualification. Which Interpretation Law default may matter?
+6. A definition chain remains incomplete after checking the instrument. How should unresolved dependency be expressed?
+7. A schedule contains a definition that affects the operative Article. What must the skill avoid missing?

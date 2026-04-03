@@ -2,18 +2,25 @@
 
 ## Status
 
-Starter distilled note.
+Starter distilled note based on the user-supplied document and official JLIB materials.
 
-## Scope
+## Main Points Carried Into The Repo
 
-This note is a short placeholder summary of the idea that AI systems may help users navigate Jersey legislation, while still creating risks of overclaiming, citation drift, and version confusion.
+- JLIB is the core public source for Jersey legislation.
+- Jersey legislation appears in different source states, and a useful system must distinguish them before answering.
+- Time-frame control is essential. A system must know whether the user asks about law now, at a past date, or in a prospective scenario.
+- Provision-level citation is much more useful than page-number citation.
+- Reading often depends on more than one provision, especially definitions and cross-references.
+- The `Interpretation (Jersey) Law 1954` may matter even without an express cross-reference.
+- Legislation alone does not settle every question. Case law, court practice, facts, and other context may still be required.
 
-## Key Points
+## Repo Impact
 
-- A chatbot-style interface can make legislative material easier to approach.
-- The main failure modes are usually not only hallucination, but also wrong version choice, weak citation practice, and false certainty.
-- A skills-based repository may be a safer foundation than a single-answer product because it separates reading steps and exposes uncertainty.
+This note directly supports:
 
-## Use In This Repo
-
-This note mainly supports the decision to structure the repository around narrow reading skills rather than broad legal-answer generation.
+- source-state orientation
+- date and version control
+- provision-level citation
+- the definitions and cross-reference skill
+- the constrained Jersey-defaults skill
+- the boundary-checking skill

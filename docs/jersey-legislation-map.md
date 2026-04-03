@@ -1,52 +1,70 @@
 # Jersey Legislation Map
 
-## Purpose Of This Note
+## Purpose
 
-This is a practical, high-level map of Jersey legislation as a system. It is not an authoritative textbook and should not be treated as a complete statement of Jersey law.
+This note is a practical, high-level map of Jersey legislation as a reading system. It is not a legal textbook and should not be treated as a complete account of Jersey law.
 
-## Main Instrument Families
+## Main Types Of Legislation
 
-A careful reader will commonly encounter material such as:
+JLIB's public guidance describes Jersey's statute book as including:
 
 - Laws
+- Orders in Council extending laws of the United Kingdom to Jersey
 - Regulations
 - Orders
-- Rules
-- subordinate instruments made under primary legislation
+- Acts
+- Bye-laws
+- Rules, mostly court rules
 
-The exact legal effect of an instrument depends on its source, form, commencement, amendment history, and surrounding legal context.
+For reading purposes, it is often useful to distinguish between:
 
-## Structural Features
+- primary legislation, mainly Laws and some Orders in Council
+- secondary legislation, including Regulations, Orders, and other instruments made under enabling powers
 
-Jersey legislation often needs to be read at provision level. Useful units may include:
+## Jersey Legislation And UK-Extended Material
+
+The repo treats two broad source families differently:
+
+- Jersey legislation made within the Jersey system
+- UK legislation extended to Jersey by Order in Council and registered in the Royal Court
+
+Both may appear in JLIB's current collection, but they should not be read in the same way. JLIB's own guidance says current-collection Orders in Council extending UK legislation to Jersey are static and need to be interpreted with care.
+
+## Stages And Versions That Matter
+
+Operationally, a careful reader may need to distinguish:
+
+- `Enacted`: the text as originally made, not updated
+- `Current`: the law in force today
+- `Current point-in-time`: an earlier official version in the current collection, available back to `1 January 2019`
+- `Pending`: legislation not yet enacted or current, and not yet in effect
+- `Archive (non-current)`: mixed historical or non-official material
+- `Repealed`: legislation no longer in force
+
+These are not interchangeable. The right source depends on the question.
+
+## Structural Units
+
+Jersey legislation should usually be read at provision level rather than as a flat document. Useful units include:
 
 - Parts
-- Chapters
 - Articles
+- Regulations
+- Orders
 - paragraphs and sub-paragraphs
 - Schedules
 
-Readers should avoid treating the document as a flat text block. The position of a provision within the instrument usually matters.
+The operative unit depends on the instrument type.
 
-## Version Types A Reader May Need To Distinguish
+## Reading Consequences
 
-Operationally, readers may need to distinguish between:
+- A title alone is not enough. The source state matters.
+- A current answer should normally come from the current collection, not from enacted or archive material.
+- An original-text question should normally go to the enacted collection, not a consolidated current version.
+- A historical question may require a current point-in-time version or, for older material, archive material with limitations stated.
+- A translated page may help understanding, but the original French law remains the authoritative source.
+- An annotated page may help identify judgments, but it is not a substitute for current official legislation.
 
-- current consolidated material
-- older or non-current versions
-- pending or not-yet-in-force material
-- as-enacted or original text
-- annotated or translated supporting material
+## Limits
 
-The right version depends on the question being asked and the date to which the reading exercise is anchored.
-
-## Practical Reading Consequences
-
-- The title of an instrument is not enough on its own.
-- A provision may read differently depending on date and version.
-- A current-looking text may still require checking commencement or later amendment history.
-- A translated or annotated text may assist reading, but may not answer every authoritative question.
-
-## Working Assumption
-
-For this repository, the safest default is: first identify the instrument, then the collection or status, then the relevant date, and only then begin substantive reading.
+JLIB does not contain the whole of Jersey law. Official JLIB guidance also reminds readers that customary law and common law, including law as interpreted by the courts, are part of Jersey law but are not listed on Jerseylaw.je.

@@ -2,23 +2,23 @@
 
 ## Scenario
 
-A user is looking at material on JLIB that appears to involve UK legislation extended or applied to Jersey.
+A user is on a JLIB page in the current collection, but the material is an Order in Council extending UK legislation to Jersey.
 
 ## Suggested Skill Sequence
 
 1. `01-orient-the-text-on-jlib`
-   Note that the material may not be purely local Jersey legislation and flag special caution.
+   Record that the source is in the current collection but is `UK-extended`, not straightforward current consolidated Jersey legislation.
 2. `02-find-the-right-version-and-date`
-   Confirm the relevant date and whether the text shown matches that date.
+   Confirm the target date and whether the source is being used for present or historical reading.
 3. `03-cite-and-link-jersey-legislation-properly`
-   Cite the specific local or extended provision, not just the collection.
+   Cite the exact provision and mark the source as UK-extended material.
 4. `05-apply-definitions-and-cross-references`
-   Check whether local instruments modify or qualify the UK text.
+   Check whether Jersey legislation modifies, applies, or depends on the UK text.
 5. `06-apply-non-obvious-background-rules`
-   Flag scope or commencement issues if the extract alone seems incomplete.
+   Use only the maintained Jersey defaults if they are genuinely triggered.
 6. `07-boundary-check-legislation-alone-or-not`
-   State clearly if fuller contextual research is needed.
+   State clearly whether further contextual research is needed.
 
 ## Safe Outcome
 
-The workflow should usually produce a cautious description, not a definitive conclusion, unless the linkage and scope are very clear.
+JLIB's public guidance says current-collection UK-extended material is static and should be interpreted with care. The safe result is therefore usually a cautious reading plus a clear warning about scope, modification, and date alignment.

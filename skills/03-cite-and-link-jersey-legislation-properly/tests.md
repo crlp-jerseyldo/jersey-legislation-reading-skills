@@ -2,9 +2,9 @@
 
 ## Prompt Set
 
-1. A user wants a citation for a specific article in a current Law. What fields should the output contain?
-2. A user gives only a page number from a PDF-like view. What should happen before citing?
-3. The text is pending legislation. How should the citation note reflect that?
-4. A copied extract has no visible provision number. Should a precise citation be invented?
-5. A schedule paragraph is the operative unit. How should the skill avoid vague whole-instrument citation?
-6. The only available link is a collection landing page. What should the output say about link precision?
+1. A user wants a citation for a current article in an official consolidated Law. What fields must appear?
+2. A user wants a citation for a provision on a point-in-time page. What date information must be preserved?
+3. The source is `Pending`. How should the citation note prevent misuse?
+4. The source is `Translated`. What must be said about officiality?
+5. Only a PDF page number is available and the provision has not been identified. What is the right fallback posture?
+6. A provision is in a Schedule paragraph, not an Article. How should the citation avoid vagueness?

@@ -1,19 +1,25 @@
 # Examples
 
-## Example 1
+## Example 1: Present Law
 
-Input: "What does this Law say today?"
+Input: `What does this provision say today?` with a JLIB page in `Current` showing `to Current`.
 
-Use: Set the target as present law, look for current consolidated material, and confirm that the text shown fits that purpose.
+Use: Match the task to `Current`, confirm the source fits, and carry forward the page's stated date range.
 
-## Example 2
+## Example 2: Historical Question After 2019
 
-Input: "What did Article 5 say in 2019?"
+Input: `What did Article 5 say in March 2021?`
 
-Use: Anchor the task to 2019 and refuse to rely on a current-only extract without checking historical status.
+Use: Match the task to `Current point-in-time`, not just the latest current page, and look for the version effective at that date.
 
-## Example 3
+## Example 3: Original Text
 
-Input: A page marked pending plus a question about whether the rule already applies.
+Input: `Show me the Law as originally enacted.`
 
-Use: Separate future change material from law currently in force unless the commencement position is clearly established.
+Use: Match the task to `Enacted`, and note that current consolidated text is not the right source for that question.
+
+## Example 4: Future Change
+
+Input: `Will this pending amendment apply next month?`
+
+Use: Record that `Pending` text is not yet enacted or current and cannot support certainty about future law.
