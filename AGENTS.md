@@ -2,7 +2,7 @@
 
 ## Repo Purpose
 
-This repository stores reusable skills, examples, tests, and source notes for reading Jersey legislation properly. It is for disciplined source-reading, not for free-form legal answering.
+This repository stores reusable skills, examples, tests, and source notes for reading Jersey legislation properly. It is for disciplined source-reading, not for free-form legal answering. This is not an official JLIB or LDO item and is still work in progress & open to consultation.
 
 ## Non-Goals
 
