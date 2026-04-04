@@ -40,10 +40,10 @@ Use this lookup order:
 1. Check for a local scoped definition in the same provision or part.
 2. Check the instrument-wide interpretation provision.
 3. Check same-instrument cross-references.
-4. If the text is subordinate legislation, check the parent enactment.
-5. Check defaults from the `Interpretation (Jersey) Law 1954`, especially Articles `1`, `2`, `4`, `9`, `10`, and `11`.
-6. Check external enactment cross-references against the same target date as the main question.
-7. Update the reading and note any unresolved dependencies that still remain.
+4. If the text is subordinate legislation, check the parent enactment for definitions, linked powers, or express dependencies.
+5. Check external enactment cross-references against the same target date as the main question.
+6. Update the reading and note any unresolved dependencies that still remain.
+7. If a remaining issue turns on a Jersey-wide background default rather than an express definition or cross-reference, hand off to `06-apply-non-obvious-background-rules`.
 
 # Output Format
 
@@ -52,7 +52,6 @@ Use this lookup order:
 - Provision reference:
 - Defined terms checked:
 - Cross-references checked:
-- Interpretation (Jersey) Law 1954 defaults checked:
 - Reading impact:
 - Remaining unresolved dependencies:
 
@@ -61,9 +60,8 @@ Use this lookup order:
 - ignoring a local definition because a general interpretation article exists
 - missing that subordinate legislation may inherit meaning from the parent enactment
 - following an external enactment without aligning dates
-- missing Article 9's default treatment of references to enactments
 - stopping after one cross-reference in a longer chain
 
 # Dependency Notes
 
-This skill usually follows logic mapping. If important uncertainty remains after this stage, move to `06-apply-non-obvious-background-rules` or directly to `07-boundary-check-legislation-alone-or-not`.
+This skill usually follows logic mapping. If important uncertainty remains because a Jersey-wide background default may matter, move to `06-apply-non-obvious-background-rules`. If no such trigger remains, you can move directly to `07-boundary-check-legislation-alone-or-not`.

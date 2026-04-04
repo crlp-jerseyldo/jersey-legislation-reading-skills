@@ -5,7 +5,6 @@ version: 0.2
 depends_on:
   - read-a-provision-as-logic
   - apply-definitions-and-cross-references
-  - apply-non-obvious-background-rules
 enables: []
 ---
 
@@ -62,4 +61,4 @@ Prevent false certainty by separating what the legislative text itself supports 
 
 # Dependency Notes
 
-This is the final checking skill. It compresses the limits discovered by earlier skills into an honest answer posture.
+This is the final checking skill. It compresses the limits discovered by earlier skills into an honest answer posture. It can follow `05-apply-definitions-and-cross-references` directly when no Jersey-wide background-rule trigger remains, or follow `06-apply-non-obvious-background-rules` where that shortlist has been used.

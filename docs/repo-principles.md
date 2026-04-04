@@ -8,6 +8,7 @@ This repository is a modular framework for reading Jersey legislation carefully.
 
 Reading legislation properly requires several distinct moves:
 
+- locate the right JLIB page or collection for the task
 - identify the source and whether it is official
 - fix the relevant date and version
 - cite the provision precisely
@@ -52,7 +53,7 @@ This repository assumes that serious Jersey legislation reading usually starts o
 - `Translated`
 - `Annotated`
 
-The architecture therefore treats source classification, officiality, and date control as foundational rather than optional.
+The architecture therefore treats locating the right JLIB page, then source classification, officiality, and date control as foundational rather than optional.
 
 ## Adding New Skill Families
 

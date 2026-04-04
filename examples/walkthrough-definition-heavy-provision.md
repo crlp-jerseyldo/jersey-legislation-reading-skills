@@ -15,9 +15,9 @@ A user asks for a summary of a provision in `Current point-in-time` material. Th
 4. `04-read-a-provision-as-logic`
    Produce an initial logic map and mark unresolved terms.
 5. `05-apply-definitions-and-cross-references`
-   Work through the Jersey lookup order: local definition, general interpretation, same-instrument links, parent enactment, Interpretation Law defaults, then external enactments aligned to date.
+   Work through the Jersey lookup order: local definition, general interpretation, same-instrument links, parent enactment, then external enactments aligned to date.
 6. `07-boundary-check-legislation-alone-or-not`
-   State whether the now-expanded reading is enough for the user's actual question.
+   Move straight here because no separate Jersey-wide background-rule trigger remains. State whether the now-expanded reading is enough for the user's actual question.
 
 ## Safe Outcome
 

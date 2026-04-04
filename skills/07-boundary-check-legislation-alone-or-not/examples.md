@@ -4,7 +4,7 @@
 
 Input: A user asks what a current official provision says.
 
-Use: Give a descriptive provision-level reading if earlier skills are complete, while still separating text summary from application to facts.
+Use: Give a descriptive provision-level reading if earlier skills are complete. If no Jersey-wide background-rule trigger remains after skill `05`, move straight here and still separate text summary from application to facts.
 
 ## Example 2: Court Outcome Question
 

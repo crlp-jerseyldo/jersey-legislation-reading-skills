@@ -10,7 +10,7 @@ enables:
 
 # Purpose
 
-Apply a controlled shortlist of Jersey-wide defaults that may affect reading even where the provision does not point to them expressly.
+Apply a controlled shortlist of Jersey-wide defaults from the `Interpretation (Jersey) Law 1954`, plus a small offence-analysis overlay, where the text does not point to them expressly.
 
 # Use When
 
@@ -26,13 +26,13 @@ Apply a controlled shortlist of Jersey-wide defaults that may affect reading eve
 
 # Inputs
 
-- reading output from skills 04 and 05
+- reading output from skill 05
 - specific unresolved issue
 - target question and date
 
 # Method
 
-Check only the following defaults, and only if they are relevant:
+Check only the following defaults from the `Interpretation (Jersey) Law 1954`, and only if they are relevant:
 
 1. Article `2`: gender, number, and grammatical variation.
 2. Article `3`: bodies corporate in penal enactments.
@@ -50,7 +50,7 @@ Then:
 # Output Format
 
 - Issue noticed:
-- Jersey-wide default checked:
+- Interpretation (Jersey) Law 1954 default checked:
 - Source basis:
 - Reading effect:
 - Domain-specific overlay checked:
@@ -61,9 +61,10 @@ Then:
 
 - using this skill as a catch-all for anything difficult
 - forgetting that the maintained shortlist is limited
+- referring only to bare article numbers without naming the `Interpretation (Jersey) Law 1954`
 - turning a reading default into a final legal conclusion
 - presenting the young-offenders age rule as a universal background rule instead of a specific offence-analysis overlay
 
 # Dependency Notes
 
-This skill is deliberately narrow. It is normally the last reading aid before `07-boundary-check-legislation-alone-or-not`.
+This skill is deliberately narrow. Use it only when `05-apply-definitions-and-cross-references` leaves a real Jersey-wide default issue unresolved. It is normally the last reading aid before `07-boundary-check-legislation-alone-or-not`.
