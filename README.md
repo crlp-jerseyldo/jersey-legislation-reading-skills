@@ -9,7 +9,7 @@ This repository is a reusable set of Markdown-first skills for reading Jersey le
 - agent systems
 - testing and evaluation work
 
-The focus is operational. Each skill is meant to help a reader identify the source, control for date and version, cite properly, read a provision as structured logic, apply definitions and cross-references, use Jersey-wide reading defaults cautiously, and stop where legislation alone is not enough.
+The focus is operational. Each skill is meant to help a reader locate the right JLIB page, identify the source, control for date and version, cite properly, read a provision as structured logic, apply definitions and cross-references, use Jersey-wide reading defaults cautiously, and stop where legislation alone is not enough.
 
 ## What This Repository Is Not
 
@@ -40,15 +40,16 @@ The repo also treats `UK-extended` material as a special case. JLIB places such 
 
 ## Skill Families
 
-The current skills cover seven linked tasks:
+The current skills cover eight linked tasks:
 
-1. orient the text on JLIB
-2. find the right version and date
-3. cite and link Jersey legislation properly
-4. read a provision as logic
-5. apply definitions and cross-references
-6. apply Jersey-wide reading defaults cautiously
-7. boundary-check whether legislation alone is enough
+1. locate the right JLIB page
+2. orient the text on JLIB
+3. find the right version and date
+4. cite and link Jersey legislation properly
+5. read a provision as logic
+6. apply definitions and cross-references
+7. apply Jersey-wide reading defaults cautiously
+8. boundary-check whether legislation alone is enough
 
 The skills are narrow on purpose. A reader or system should be able to compose them in sequence without treating any single file as a complete legal method.
 
@@ -56,13 +57,14 @@ The skills are narrow on purpose. A reader or system should be able to compose t
 
 In a normal workflow:
 
-1. identify what source is being used and whether it is official
-2. fix the target date and the right version type
-3. cite the exact provision
-4. turn the provision into a structured reading
-5. pull in definitions and linked provisions
-6. apply Jersey-wide defaults only where they are genuinely relevant
-7. say plainly when legislation alone does not settle the question
+1. locate the right JLIB page or collection for the task
+2. identify what source is being used and whether it is official
+3. fix the target date and the right version type
+4. cite the exact provision
+5. turn the provision into a structured reading
+6. pull in definitions and linked provisions
+7. apply Jersey-wide defaults only where they are genuinely relevant
+8. say plainly when legislation alone does not settle the question
 
 This can be used as:
 

@@ -6,6 +6,7 @@ This folder contains scenario lists for testing the repository as a whole.
 
 Repo-level tests check whether:
 
+- JLIB research navigation and entrypoint choice are handled safely
 - the Jersey/JLIB taxonomy is applied consistently
 - the skills compose in the right order
 - source-state and officiality warnings appear when needed
@@ -17,6 +18,7 @@ Skill-level tests inside each skill directory probe one module at a time.
 
 Repo-level tests in this folder probe combined behaviour across several skills, especially:
 
+- locating the right JLIB page before analysis
 - source triage
 - date and version control
 - citation posture

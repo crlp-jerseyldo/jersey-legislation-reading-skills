@@ -4,6 +4,7 @@ This folder contains short walkthroughs showing how the skills compose in realis
 
 The examples are intentionally operational:
 
+- locate the right JLIB page first when no stable page is supplied
 - identify the source state first
 - fix date and version before interpretation
 - keep citations provision-level

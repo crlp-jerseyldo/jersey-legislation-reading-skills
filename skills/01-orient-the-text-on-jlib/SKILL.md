@@ -67,4 +67,4 @@ Work out exactly what text the reader is looking at on JLIB before any substanti
 
 # Dependency Notes
 
-This skill should normally come first. After orientation, hand off to `02-find-the-right-version-and-date`.
+This skill should normally come first once a stable JLIB page is in view. If no stable page has been identified yet, start with `00-locate-the-right-jlib-page`. After orientation, hand off to `02-find-the-right-version-and-date`.
